@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kulim+Park">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Стиль для контейнера с частицами */
+        #particles-js {
+            position: fixed;
+            /* Фиксированное позиционирование */
+            width: 100%;
+            /* Ширина на 100% */
+            height: 100%;
+            /* Высота на 100% */
+            z-index: -1;
+            /* Отправляем на фон */
+            top: 0;
+            /* Прижимаем к верхней части */
+            left: 0;
+            /* Прижимаем к левой части */
+        }
+    </style>
+
+
+    <style>
+        /* Анимация градиента */
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .animated-gradient {
+            background: linear-gradient(270deg, #1c1c1e, #3f3f3f, #4b4b4d, #2a2a2e, #6e6e6e, #0d0d0f);
+            background-size: 600% 600%;
+            animation: gradient 15s ease infinite;
+            -webkit-background-clip: text;
+            /* Для браузеров на основе Webkit */
+            -webkit-text-fill-color: transparent;
+            /* Заполнение текста прозрачным цветом */
+            text-align: center;
+            /* По желанию */
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <script>alert('Вас приветствует Евгений FrontЭндович!')</script>
+    
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    <div id="particles-js"></div>
+    <header>
+        <div class="hero_section">
+            <nav class="navigation">
+                <ul class="navigation_list">
+                    <li><a href="#s1">Наша работа</a></li>
+                    <li><a href="#s2">Сообщество</a></li>
+                    <li><a href="#s3">О нас</a></li>
+                    <style>
+                        .navigation_list a {
+                            color: #555555;
+                            /* Цвет текста */
+                            text-decoration: none;
+                            /* Убираем подчеркивание */
+                        }
+
+                        .navigation_list a:hover {
+                            color: #ff6d6d;
+                            /* Цвет при наведении */
+                        }
+                    </style>
+                </ul>
+                <a href="" class="logo_nav"><img src="images/Логотип в Header.png" alt=""></a>
+                <button class="btn_nav">Начать помогать</button>
+            </nav>
+            <div class="header_poto">
+                <img src="images/Картинка сурков.png" alt="">
+                <h2 class="h2_header_photo animated-gradient">Сохраним природу вместе</h2>
+                <p class="header_photo_p">Защитим природу и животных — наше будущее зависит от нас!</p>
+                <button class="btm_help" type="button">Помощь</button>
+            </div>
+        </div>
+    </header>
+    <div class="container_leon"
+        style="border: 1px solid #b8a8a8; border-radius: 50px; background-color: rgba(128, 128, 128, 0.3); backdrop-filter: blur(10px);">
+        <img src="images/Картинка льва.png" class="img_leon">
+        <div class="text-container_leon">
+            <h2 class="leon_h2">Наша миссия — охранять и восстанавливать природные экосистемы обеспечивая устойчивое
+                будущее для планеты и её обитателей.</h2>
+            <p class="leon_p" id="s1">Мы стремимся создавать и поддерживать инициативы, направленные на сохранение
+                биоразнообразия, минимизацию экологического воздействия и повышение осведомленности общественности о
+                важности защиты окружающей среды. Работая совместно с партнёрами и местными сообществами, мы
+                обеспечиваем долговременное сохранение планеты и её уникальных экосистем для будущих поколений.</p>
+            <button class="leon_btn">Начать помогать прямо сейчас</button>
+        </div>
+    </div>
+    <div class="stats_container"
+        style="border: 1px solid #b8a8a8; border-radius: 50px; background-color: rgba(128, 128, 128, 0.3); backdrop-filter: blur(10px);">
+        <div class="stat animated-gradient">
+            <h2>50 000 га</h2>
+            <p>Площадь восстановленных лесов</p>
+        </div>
+        <div class="stat animated-gradient">
+            <h2>150+</h2>
+            <p>Количество реализованных проектов</p>
+        </div>
+        <div class="stat animated-gradient">
+            <h2>2 000+</h2>
+            <p>Число спасённых животных</p>
+        </div>
+        <div class="stat animated-gradient">
+            <h2>5 000+</h2>
+            <p>Количество волонтёров</p>
+        </div>
+    </div>
+
+    <body>
+        <div class="container_form">
+            <div class="images_form">
+                <img src="images/Картинка дельфинов.png" alt="" class="image1_form">
+                <img src="images/Картинка жирафа.png" alt="" class="image2_form">
+            </div>
+            <div class="text_form"
+                style="border: 1px solid #b8a8a8; border-radius: 50px; background-color: rgba(128, 128, 128, 0.3); backdrop-filter: blur(10px);">
+                <h2>Как мы работаем?</h2>
+                <p>Для нас самое главное — сохранение и восстановление природных экосистем, защита дикой природы и
+                    поддержание биоразнообразия, чтобы обеспечить устойчивое будущее для планеты и её обитателей.</p>
+                <div class="info_container">
+                    <ul class="accordion">
+                        <li>
+                            <div class="accordion-header">
+                                <span>Разрабатываем проекты по охране окружающей среды</span>
+                                <button class="accordion-toggle"></button>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, labore totam
+                                    voluptatem ipsum iusto voluptates quae? Labore inventore explicabo ad sequi a cum
+                                    delectus quis nobis tenetur. Illum, molestiae est!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion-header">
+                                <span>Проводим научные исследования экосистем</span>
+                                <button class="accordion-toggle"></button>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim dicta, reiciendis
+                                    blanditiis reprehenderit aliquid rerum delectus fugiat esse, velit ea eligendi eos
+                                    repellat cumque saepe, laudantium aperiam error architecto.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion-header">
+                                <span>Организуем программы по защите природы.</span>
+                                <button class="accordion-toggle"></button>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, nostrum. Minima
+                                    dolore mollitia hic sunt, quidem minus! Omnis harum soluta illum magnam esse quo
+                                    suscipit molestias quisquam eligendi! Voluptate, excepturi.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion-header">
+                                <span>Работаем с бизнесом для эффективных решений</span>
+                                <button class="accordion-toggle"></button>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam sint molestias
+                                    consequuntur, labore, eaque dignissimos commodi adipisci laudantium ducimus vel
+                                    culpa in sit tempore illo rem? Ipsam aut voluptatum dicta.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion-header">
+                                <span>Привлекаем волонтёров для участия в проектах</span>
+                                <button class="accordion-toggle"></button>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor suscipit at quae unde
+                                    blanditiis, iure odit sed? Ipsum sint a iure culpa esse, magni placeat, reiciendis
+                                    nemo eaque quia aliquid?</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion-header">
+                                <span>Обеспечиваем финансирование через пожертвования</span>
+                                <button class="accordion-toggle"></button>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ipsa itaque laborum
+                                    dolor delectus nam, assumenda debitis voluptate distinctio vero. Porro sed doloribus
+                                    corrupti, quod impedit amet suscipit eaque atque?</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion-header">
+                                <span>Регулярно публикуем отчёты о деятельности</span>
+                                <button class="accordion-toggle"></button>
+                            </div>
+                            <div class="accordion-content" id="s2">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nam totam
+                                    possimus ipsam. Excepturi officia deserunt unde quos, quod ducimus dolorum rem
+                                    libero voluptatum dolores labore incidunt maxime rerum eum!</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="last_section">
+            <div class="content">
+                <h2 class="last_h2">Каждая помощь очень важна</h2>
+                <p class="last_p">Ваш донат имеет огромное значение для нашей работы. Он позволяет нам реализовывать
+                    проекты по охране природы, восстанавливать экосистемы и защищать животных. Благодаря вашей поддержке
+                    мы можем проводить научные исследования, создавать образовательные программы и расширять наше
+                    влияние.</p>
+                <button class="last_btn">Хочу начать помогать прямо сейчас</button>
+            </div>
+        </div>
+
+
+
+    </body>
+
+    <footer>
+
+        <footer class="footer"
+            style="border: 1px solid #b8a8a8; border-radius: 50px; background-color: rgba(128, 128, 128, 0.3); backdrop-filter: blur(10px);">
+            <div class="top-line"></div>
+            <div class="footer-content">
+                <div class="info-column" id="s3">
+                    <h3>Природа</h3>
+                    <ul>
+                        <li><a href="#">Лес</a></li>
+                        <li><a href="#">Озера</a></li>
+                        <li><a href="#">Горы</a></li>
+                    </ul>
+                </div>
+                <div class="info-column">
+                    <h3>Животные</h3>
+                    <ul>
+                        <li><a href="#">Млекопитающие</a></li>
+                        <li><a href="#">Птицы</a></li>
+                        <li><a href="#">Рептилии</a></li>
+                    </ul>
+                </div>
+                <div class="info-column">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li><a href="#">Телефон</a></li>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Адрес</a></li>
+                    </ul>
+                </div>
+                <div class="subscribe-column">
+                    <h3>Подписка на новости</h3>
+                    <input type="email" placeholder="Ваш email" class="email-input">
+                    <button class="subscribe-button">Подписаться</button>
+                </div>
+            </div>
+            <div class="social-media">
+                <h3>Мы в соцсетях</h3>
+                <div class="social-buttons">
+                    <a href="#" class="social-button">VK</a>
+                    <a href="#" class="social-button">Telegram</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-logo"></div>
+                <div class="footer-info">
+                    <p>Адрес: Улица, Город</p>
+                    <p>Телефон: +1 (234) 567-890</p>
+                </div>
+            </div>
+        </footer>
+
+
+    </footer>
+    <script src="particles.js"></script> <!-- Подключаем библиотеку -->
+    <script>
+        /* Загрузка конфигурации частиц из JSON файла */
+        particlesJS.load('particles-js', 'assets/particles.json', function () {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
+    <script src="script.js"></script>
+
+    <div class="test">
+
+        <div class="cont">
+            <style>
+                .test {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 150px;
+                    margin-bottom: 150px;
+                }
+            </style>
+            <div class="cube">
+                <div class="side"></div>
+                <div class="side"></div>
+                <div class="side"></div>
+                <div class="side"></div>
+                <div class="side"></div>
+                <div class="side"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
